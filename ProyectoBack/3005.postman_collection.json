@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "6cc63d6d-2fb5-40ac-a6e0-08ac4ac8ff98",
+		"name": "3005",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3005/listado articulos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3005/art/ListarARticulos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/delete art",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3005/art/50"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/apagarserverREMOTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3005/apagarserver"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3005/ping"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/listado pug articulos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3005/art/listarArticulosPUG"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/auth/register MEM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "juan",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "juan.sequeira@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3005/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mail",
+							"value": "juan.sequeira@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3005/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/auth/listaUserConLogin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVhbiIsIm1haWwiOiJqdWFuLnNlcXVlaXJhQGdtYWlsLmNvbSIsImlhdCI6MTYzMTE1MjI1MX0.F4_YsYRSrrCuGamOBI1mbiOb6-5nU-yJBQr_kSsfYfE",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVhbiBzZXF1ZWlyYSIsIm1haWwiOiJqdWFuLnNlcXVlaXJhQGdtYWlsLmNvbSIsImlhdCI6MTYyNDgyNzUxMn0.2n2_26B0UypN4qO7Qx3wLA1bJXoZyJqddmSvjX6T7G0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:3005/auth/listaUserConLogin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/auth/listaUserSinLogin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVhbiBzZXF1ZWlyYSIsIm1haWwiOiJqdWFuLnNlcXVlaXJhQGdtYWlsLmNvbSIsImlhdCI6MTYyNDgyNjc5OX0.Ua-yvo6Am8ITFHhfhZAfN2NBw28IRci8kMk16fOi0_E",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoianVhbiBzZXF1ZWlyYSIsIm1haWwiOiJqdWFuLnNlcXVlaXJhQGdtYWlsLmNvbSIsImlhdCI6MTYyNDgyNzUxMn0.2n2_26B0UypN4qO7Qx3wLA1bJXoZyJqddmSvjX6T7G0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:3005/auth/listaUserSinLogin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/auth/agregarArticulo BD con archivo imagen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "tttt",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "marron",
+							"type": "text"
+						},
+						{
+							"key": "categoria",
+							"value": "billerters",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"type": "file",
+							"src": "/C:/Users/juan/AppData/Local/Postman/app-8.12.1/ffmpeg.dll"
+						},
+						{
+							"key": "precio",
+							"value": "122",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "122444",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "id_proveedorEnArticulos",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_categoriaEnArticulos",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3005/art/agregararticulo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/auth/agregarArticulo BD con text en imagen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "linterna",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "li",
+							"type": "text"
+						},
+						{
+							"key": "categoria",
+							"value": "mi categoria",
+							"type": "text"
+						},
+						{
+							"key": "imagen",
+							"value": "xxx",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1200",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "id_proveedorEnArticulos",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_categoriaEnArticulos",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3005/art/agregarArticulo"
+			},
+			"response": []
+		}
+	]
+}

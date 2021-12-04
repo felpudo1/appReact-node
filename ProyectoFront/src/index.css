@@ -1,0 +1,42 @@
+/**Estilos navbar*/
+.active {
+  background-color: blue;
+  color: white;
+  display: inline;
+}
+/**fin Estilos navbar*/
+
+/**Estilos Pie de pagina*/
+.footer {
+  color: #fff;
+  background: #222222;
+  padding: 50px;
+  text-align: center;
+}
+
+/**fin Estilos Pie de pagina*/
+
+h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

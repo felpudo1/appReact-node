@@ -1,0 +1,4 @@
+version1
+
+front ingresa art ok
+se actualizo a /ingresoarticulo
